@@ -1,7 +1,7 @@
 /* Responsive Design - Mobile First Approach */
 
 /* Extra Small Mobile (< 480px) */
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     /* Container padding */
     .container {
         padding: 0 0.75rem;
@@ -230,7 +230,7 @@
 }
 
 /* Small Mobile (480px - 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
     /* Typography adjustments */
     h1 {
         font-size: 2rem;
@@ -244,8 +244,8 @@
         font-size: 1.25rem;
     }
     
-   /* Navigation - Horizontal but scrollable */
-.navigation {
+    /* Navigation - Horizontal but scrollable */
+    .navigation {
         padding: 1rem;
         position: sticky;
         top: 0;
@@ -273,7 +273,7 @@
     }
     
     .nav-list::-webkit-scrollbar {
-        display: block;
+        display: none;
     }
     
     .nav-link {
@@ -674,15 +674,3 @@
         color: #E8B4BC !important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
