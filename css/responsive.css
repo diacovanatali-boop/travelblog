@@ -263,18 +263,18 @@
         height: 50px;
     }
     
-@media (max-width: 767px) {
-
-.nav-list{
-display:none;
-}
-
-.nav-list.active{
-display:flex;
-flex-direction:column;
-}
-
-}
+   .nav-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .nav-list::-webkit-scrollbar {
+        display: flex;
+    }
     }
     
     .nav-link {
@@ -675,4 +675,5 @@ flex-direction:column;
         color: #E8B4BC !important;
     }
 }
+
 
