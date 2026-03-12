@@ -77,7 +77,7 @@
     
     /* Navigation list - hidden by default */
     .nav-list {
-        display: block !important;
+        display: none !important;
         position: fixed;
         top: 0;
         left: 0;
@@ -674,6 +674,7 @@
         color: #E8B4BC !important;
     }
 }
+
 
 
 
