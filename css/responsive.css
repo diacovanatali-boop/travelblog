@@ -1,7 +1,7 @@
 /* Responsive Design - Mobile First Approach */
 
 /* Extra Small Mobile (< 480px) */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     /* Container padding */
     .container {
         padding: 0 0.75rem;
@@ -674,6 +674,7 @@
         color: #E8B4BC !important;
     }
 }
+
 
 
 
