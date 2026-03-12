@@ -245,67 +245,49 @@
     }
     
    /* Navigation - Horizontal but scrollable */
-        .navigation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1001;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .mobile-menu-btn {
-            background: linear-gradient(135deg, #E8B4BC, #B8D8E8);
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            width: 45px;
-            height: 45px;
-            border-radius: 8px;
-            cursor: pointer;
-            z-index: 1002;
-        }
-        
-        .nav-list {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: white;
-            flex-direction: column;
-            padding: 80px 20px;
-            overflow-y: auto;
-            z-index: 1000;
-            list-style: none;
-        }
-        
-        .nav-list.active {
-            display: flex;
-        }
-        
-        .nav-link {
-            display: block;
-            padding: 1.2rem;
-            margin: 0.5rem 0;
-            background: rgba(232, 180, 188, 0.1);
-            border-radius: 8px;
-            text-align: center;
-            text-decoration: none;
-            color: #333;
-            font-size: 1.1rem;
-        }
-        
-        .content {
-            margin-top: 80px;
-            padding: 20px;
-        }
+.navigation {
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .logo-image {
+        height: 50px;
+    }
+    
+    .nav-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .nav-list::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nav-link {
+        white-space: nowrap;
+        padding: 0.6rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        min-width: fit-content;
+    }
+    
+     .mobile-menu-btn {
+        display: block;
+    }
+    
     /* Hero section */
     .hero {
         padding: 2rem 1rem;
@@ -692,6 +674,7 @@
         color: #E8B4BC !important;
     }
 }
+
 
 
 
